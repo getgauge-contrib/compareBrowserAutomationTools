@@ -1,0 +1,19 @@
+{
+  "name": "webdriveriotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^5.9.6",
+    "@wdio/local-runner": "^5.9.6",
+    "@wdio/mocha-framework": "^5.9.4",
+    "@wdio/spec-reporter": "^5.9.3",
+    "chromedriver": "^74.0.0",
+    "wdio-chromedriver-service": "^5.0.1"
+  }
+}
