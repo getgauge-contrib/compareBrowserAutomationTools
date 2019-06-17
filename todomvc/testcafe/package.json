@@ -1,0 +1,14 @@
+{
+  "name": "testcafetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/*.js -s screenshots"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.2.0"
+  }
+}
