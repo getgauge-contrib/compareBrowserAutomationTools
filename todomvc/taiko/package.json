@@ -10,6 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^6.1.4",
-    "taiko": "^0.7.1"
+    "taiko": "^0.8.0"
   }
 }

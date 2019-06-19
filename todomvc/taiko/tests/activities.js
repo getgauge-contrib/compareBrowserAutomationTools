@@ -18,8 +18,8 @@ describe('test todo list', () => {
         await press('Enter')
         assert.ok(await text('1 item left').exists());
 
-        await click(label({class:"toggle-all"}))
-        await click('Clear completed')
+        await click($("#toggle-all"));
+        await click("Clear completed");
     });
 
     it('should mark task as complete', async () => {
@@ -28,6 +28,9 @@ describe('test todo list', () => {
         assert.ok(await text('1 item left').exists());
         await click(checkBox(near('Complete Task')))
         assert.ok(await text('0 items left').exists());
+
+        await click($("#toggle-all"));
+        await click("Clear completed");
     });
 
     it('should list active tasks', async () => {
@@ -42,6 +45,9 @@ describe('test todo list', () => {
 
         await click('Active')
         assert.ok(await !text('Complete Task').exists());
+
+        await click($("#toggle-all"));
+        await click("Clear completed");
     });
 
     it('should list completed tasks', async () => {
@@ -57,6 +63,9 @@ describe('test todo list', () => {
 
         await click('Completed')
         assert.ok(await text('Completed Task').exists());
+
+        await click($("#toggle-all"));
+        await click("Clear completed");
     });
 
     it('should clear completed tasks', async () => {
@@ -68,6 +77,9 @@ describe('test todo list', () => {
 
         await click('Clear completed')
         assert.ok(await !text('Clear Task').exists());
+
+        await click($("#toggle-all"));
+        await click("Clear completed");
     });
 
     it('should remove task', async () => {
@@ -77,5 +89,8 @@ describe('test todo list', () => {
         await hover("Remove Task");
         await click(button({class:"destroy"}));
         assert.ok(await !text('Remove Task').exists());
+
+        await click($("#toggle-all"));
+        await click("Clear completed");
     });
 });
