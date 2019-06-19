@@ -2,7 +2,7 @@ const assert = require('assert');
 const { openBrowser,closeBrowser, goto, checkBox, click, near,into,$,inputField,hover,button,
     write, text, press } = require('taiko');
 
-describe('test todo list', () => {
+describe('test todo mvc activities', () => {
 
     before(async () => {
         await openBrowser({headless:false});

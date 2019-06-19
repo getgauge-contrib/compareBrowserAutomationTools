@@ -1,4 +1,4 @@
-context('test customer manager', () => {
+context('test todo mvc activities', () => {
     before(() => {
       cy.visit('/');
     });

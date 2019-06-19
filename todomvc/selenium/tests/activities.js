@@ -3,7 +3,7 @@ const webPage = require('../utils/driverActions');
 const assert = require('assert');
 const webdriver = require('selenium-webdriver');
 
-describe ('test customer manager', async function () {
+describe ('test todo mvc activities', async function () {
     let webpage, driver;
 
     before(async () => {
