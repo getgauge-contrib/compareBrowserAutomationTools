@@ -29,6 +29,13 @@ const webPage = function() {
         return await this.driver.findElements(By.css(css));
     }
 
+    this.findByXPath = async function(xPath) {
+        return await this.driver.findElement(By.xpath(xPath));
+    }
+
+    this.findAllByXPath = async function(xPath) {
+        return await this.driver.findElements(By.xpath(xPath));
+    }
 };
 
 module.exports = webPage;
