@@ -1,2 +1,2 @@
-node_modules/*.*
-cypress-test/*.*
+node_modules
+cypress-test
