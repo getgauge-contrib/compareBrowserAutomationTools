@@ -1,0 +1,15 @@
+{
+  "name": "taikotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.js --timeout 30000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "taiko": "^0.8.0"
+  }
+}
