@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture `test todo mvc activities`
-    .page `http://todomvc.com/examples/react/#/`;
+    .page `http://todomvc.com/examples/angularjs/#/`;
 
 test('should clear completed tasks',async (t) => {
     await t.typeText(await Selector('input[placeholder="What needs to be done?"]'),'Demo');

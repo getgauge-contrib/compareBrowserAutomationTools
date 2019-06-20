@@ -16,4 +16,6 @@ To do this find and replace all occurances of `http://todomvc.com/examples/react
 * find and replace all occurances of `http://todomvc.com/examples/react/#/`with `http://todomvc.com/examples/angularjs/#/` and execute the tests!
 * Save all
 * Run the tests again `npm test`
-> All tools except for Taiko fail when the DOM changed!
+
+**Findings**
+All tools except for Taiko fail when the DOM changed!
