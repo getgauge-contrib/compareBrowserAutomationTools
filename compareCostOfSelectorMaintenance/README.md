@@ -22,5 +22,9 @@ To do this find and replace all occurances of `http://todomvc.com/examples/react
 - WebdriverIO - Has Text search option on a selected element. The selectors have very limited options for being DOM independent. This is not sufficient to write tests with DOM independent selectors.
 - Testcafe  - There are Limited options for DOM independent selectors like text search. This is still not sufficient to write tests with DOM independent selectors. 
 - Cypress - Some options for DOM independent selectors. In some cases text across DOM elements can also be found. This makes the text search is better than TestCafe, but has issues when there are multiple matches. Cannot use DOM independent selectors for elements with no text. This limits the user in writing tests which are independent of DOM.
-- Taiko - Many options for DOM independent selectors . Has options to search for text without worrying about it spanning across DOM elements. Smart selectors allow users to select element for interaction without inspecting DOM details. Proximity selectors help user select required element when multiple matches are found. It has fallback options that can be used DOM independent selectors are not sufficient!
 - Puppeteer - The selectors heavily depend on DOM. There doesn’t seem to be are no easy ways to do a text search unless user creates wrappers for it. 
+
+**Why Taiko tests passed even when DOM changed**
+- Taiko has many options for DOM independent selectors. It has options to search for text without worrying about it spanning across DOM elements. Smart selectors allow users to select element for interaction without inspecting DOM details. Proximity selectors help user select required element when multiple matches are found. All these were sufficient to handle the test cases given.
+> Taiko has fallback options that can be used DOM independent selectors are not sufficient!
+
