@@ -21,6 +21,6 @@ Do `npm install` inside each folder and run using `npm test`
 
 ### Results
 
-- [Comparison of Performance]()
-- [Comparison of Reliability]() 
+- [Comparison of Performance](https://github.com/getgauge-contrib/forToolComparison/blob/master/comparePerformanceAndFlakinessOfTools/ComparePerfomance.md)
+- [Comparison of Reliability](https://github.com/getgauge-contrib/forToolComparison/blob/master/comparePerformanceAndFlakinessOfTools/CompareReliability.md) 
 
