@@ -18,7 +18,7 @@ In this example, all tools except Taiko and TestCafe needed at least one/more wa
 
 - Selenium - The implicit waits that can be added by `await driver.manage().setTimeouts({implicit: 5000});` to wait for elements does not handle all the cases, even with that had to add explicit waits.
 
-- WebdriverIO - The implicit waits that can be added by `await browser.setTimeout({ 'implicit': 5000 });` to wait for elements works fine in most cases but they tend to hit the performance of sample test suite by 3 secs on an average(Run with same spec as used for performance comparison). 
+- WebdriverIO - The implicit waits that can be added by `await browser.setTimeout({ 'implicit': 5000 });` to wait for elements works fine in most cases but they tend to hit the performance of sample test suite by 3 secs on an average(Tests ran with same spec as used for performance comparison). 
 
 - Puppeteer - Syntax for `waitForNavigation` has to be handled with caution using `Promise.All` like mentioned in [example](https://github.com/GoogleChrome/puppeteer/blob/v1.18.0/docs/api.md#pagewaitfornavigationoptions) else the wait wont happen properly or the script hangs. 
 
