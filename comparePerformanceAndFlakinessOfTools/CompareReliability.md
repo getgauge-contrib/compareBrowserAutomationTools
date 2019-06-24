@@ -1,5 +1,7 @@
 ## Reliability comparison of tools
 
+In this example, all tools except Taiko and TestCafe needed at least one/more waits to be handled explicitly in code. To validate it, comment all the wait conditions added explicitly in code. Execute it; Please note the tests may have to be run consecutively a couple of times to observe the flakiness. More the explicit waits that are to be added, more flakier the tests becomes as it requires lot of understanding of system under test and the tool used.
+
 | Tool        | Reliability                                                                                                                               | Ease of use                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | Cypress     | Handles some cases with implicit waits.(Element to be actionable)                                                                         | Has APIs to [wait for requests](https://docs.cypress.io/api/commands/wait.html#Syntax) other waits to be handled using promises                              |
