@@ -1,6 +1,6 @@
-# Benchmark taiko
+# Sample tests to compare performance and reliability of test automation tools
 
-This repo has tests written using cypress, selenium js, taiko, testcafe and webdriverIO. Tests are written against the sample angular customer manager app which tests the flows of adding, editing, filtering and viewing customer details.
+This repo has tests written using cypress, puppeteer, selenium js, taiko, testcafe and webdriverIO. Tests are written against the sample angular customer manager app which tests the flows of adding, editing, filtering and viewing customer details.
 
 ### Requirements
 
