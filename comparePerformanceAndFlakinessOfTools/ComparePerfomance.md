@@ -24,7 +24,7 @@ Boot Volume: Macintosh HD
 Boot Mode: Normal
 node: v12.1.0
 ```
-All tests were ran in headless mode using command `time npm test`. Mocha runner is used expect for cypress and testcafe. Lesser time and lesser CPU denotes better performance. 
+All tests were ran in headless mode using command `time npm test`. Mocha runner is used expect for testcafe, cypress bundles its own runner built on top of Mocha. Lesser time and lesser CPU denotes better performance. 
 
 Versions of tools used: 
 
