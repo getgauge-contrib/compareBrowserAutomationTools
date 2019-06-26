@@ -28,18 +28,11 @@ All tests were ran in headless mode using command `time npm test`. Mocha runner 
 
 Versions of tools used: 
 
-- Cypress - 3.2.0
-- Selenium - 4.0.0-alpha.1 (chromedriver - 74.0.0)
-- Taiko - 0.8.0
-- Testcafe - 1.2.0
-- WebdriverIO - 5.9.6 (chromedriver - 74.0.0)
-- Puppeteer - 1.17.0
-
-| Tools       | CPU(%) | Total(sec) |
-|-------------|--------|------------|
-| Cypress     | 111    | 15.734     |
-| Puppeteer   | 53     | 2.625      |
-| Selenium    | 6      | 13.687     |
-| Taiko       | 41     | 6.556      |
-| Testcafe    | 26     | 20.370     |
-| WebdriverIO | 46     | 5.447      |
+|                      Tools                       | CPU(%) | Total(sec) |
+|--------------------------------------------------|--------|------------|
+| Selenium - 4.0.0-alpha.1 (chromedriver - 74.0.0) |      6 |     13.687 |
+| WebdriverIO - 5.9.6 (chromedriver - 74.0.0)      |     46 |      5.447 |
+| Testcafe - 1.2.0                                 |     26 |     20.370 |
+| Cypress - 3.2.0                                  |    111 |     15.734 |
+| Puppeteer                                        |     53 |      2.625 |
+| Taiko - 0.8.0                                    |     41 |      6.556 |
