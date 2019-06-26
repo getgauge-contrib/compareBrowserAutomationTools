@@ -1,3 +1,5 @@
+**Cost of test Maintenance**
+
 This project is for comparing Writing and maintaining costs associate with tools. 
 
 Ideally, with functionality intact, the test code shouldn’t change. i.e when the user workflow hasn‘t changed, the test code shouldn’t have to change. 
@@ -25,6 +27,6 @@ To do this find and replace all occurances of `http://todomvc.com/examples/react
 - Puppeteer - The selectors heavily depend on DOM. There doesn’t seem to be are no easy ways to do a text search unless user creates wrappers for it. 
 
 **Why Taiko tests passed even when DOM changed**
-- Taiko has many options for [DOM independent selectors](https://taiko.gauge.org/#smart-selectors). It has options to search for text without worrying about it spanning across DOM elements. Smart selectors allow users to select element for interaction without inspecting DOM details. [Proximity selectors](https://taiko.gauge.org/#toleftof) help user select required element when multiple matches are found. All these were sufficient to handle the test cases given.
+- Taiko has many options for [selectors that are independent of DOM](https://taiko.gauge.org/#smart-selectors). It has options to search for text without worrying about it spanning across DOM elements. Smart selectors allow users to select element for interaction without inspecting DOM details. [Proximity selectors](https://taiko.gauge.org/#toleftof) help user select required element when multiple matches are found. All these were sufficient to handle the test cases given.
 > Taiko has fallback options that can be used DOM independent selectors are not sufficient!
 
