@@ -1,6 +1,6 @@
 **Cost of test Maintenance**
 
-This project is for comparing Writing and maintaining costs associate with tools. 
+This project has tests for the [todoMVC app](http://todomvc.com/examples/react/#/). The reason we chose this APP is because it is written in a bunch of UI frameworks with the same functionality. For this validation, we will be using the React and AngularJS flavours of the APP. Here we will be comparing Writing and maintaining costs associated with the tools. 
 
 Ideally, with functionality intact, the test code shouldn’t change. i.e when the user workflow hasn‘t changed, the test code shouldn’t have to change. 
 Therefore, tools with lesser dependency on DOM is better for writing and maintaining tests!
