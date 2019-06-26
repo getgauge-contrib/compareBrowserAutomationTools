@@ -34,5 +34,5 @@ Versions of tools used:
 | WebdriverIO - 5.9.6 (chromedriver - 74.0.0)      |     46 |      5.447 |
 | Testcafe - 1.2.0                                 |     26 |     20.370 |
 | Cypress - 3.2.0                                  |    111 |     15.734 |
-| Puppeteer                                        |     53 |      2.625 |
+| Puppeteer - 1.17.0                               |     53 |      2.625 |
 | Taiko - 0.8.0                                    |     41 |      6.556 |
