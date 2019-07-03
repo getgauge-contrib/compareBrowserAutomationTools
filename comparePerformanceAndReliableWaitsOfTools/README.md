@@ -1,5 +1,7 @@
 ## Compare performance and reliable wait mechanisms of test automation tools
 
+Note: Tests are written for comparison of action, code structuring/flow does not imply anything.  
+
 This repo has tests written using cypress, puppeteer, selenium js, taiko, testcafe and webdriverIO. Tests are written against the sample angular customer manager app which tests the flows of adding, editing, filtering and viewing customer details.
 
 ### Requirements
