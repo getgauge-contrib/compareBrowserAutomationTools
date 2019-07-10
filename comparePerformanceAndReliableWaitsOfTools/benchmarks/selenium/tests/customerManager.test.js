@@ -1,6 +1,7 @@
 const { describe, it, after, before } = require('mocha');
 const webPage = require('../utils/driverActions');
 const assert = require('assert');
+const {until, By} = require('selenium-webdriver');
 
 
 describe ('test customer manager', async function () {
@@ -23,7 +24,10 @@ describe ('test customer manager', async function () {
 
     it('should let user login',async () => {
         (await webpage.findByCss('body > cm-app-component > main > cm-navbar > nav > div > div > span > ul > li:nth-child(4) > a')).click();
-        await driver.sleep(1000);
+        await driver.wait(
+            until.elementLocated(By.css('input[name="email"]')), 
+            10000
+        );
         (await webpage.findByCss('input[name="email"]')).sendKeys('admin@customermanager.com');
         (await webpage.findByCss('input[name="password"]')).sendKeys('password123');
         (await webpage.findByCss('button[type="submit"]')).click();
