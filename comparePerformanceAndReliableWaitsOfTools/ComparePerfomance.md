@@ -30,9 +30,9 @@ Versions of tools used:
 
 |                      Tools                       | CPU(%) | Total(sec) |
 |--------------------------------------------------|--------|------------|
-| Selenium - 4.0.0-alpha.1 (chromedriver - 74.0.0) |      6 |     13.687 |
-| WebdriverIO - 5.9.6 (chromedriver - 74.0.0)      |     46 |      5.447 |
-| Testcafe - 1.2.0                                 |     26 |     20.370 |
-| Cypress - 3.2.0                                  |    111 |     15.734 |
-| Puppeteer - 1.17.0                               |     53 |      2.625 |
-| Taiko - 0.8.0                                    |     41 |      6.556 |
+| Selenium - 4.0.0-alpha.7 (chromedriver - 83.0.0) |      8 |     13.240 |
+| WebdriverIO - 6.1.17 (chromedriver - 83.0.0)     |     56 |      5.044 |
+| Testcafe - 1.8.0                                 |     26 |     23.977 |
+| Cypress - 4.8.0                                  |    129 |     14.247 |
+| Puppeteer - 4.0.0                                |     55 |      2.719 |
+| Taiko - 1.0.12                                   |     46 |      4.757 |
