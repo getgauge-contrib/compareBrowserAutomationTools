@@ -4,7 +4,7 @@ describe('test todo mvc activities', () => {
     
     before(async () => {
         await browser.setWindowSize(1440, 900);
-        await browser.url('http://todomvc.com/examples/react/#/');
+        await browser.url('http://todomvc.com/examples/angularjs/#/');
     });
 
     it('should clear completed tasks',async () => {

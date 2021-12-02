@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run --parallel"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^3.2.0"
+    "cypress": "^9.1.0"
   }
 }

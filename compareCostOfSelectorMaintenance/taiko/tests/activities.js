@@ -1,12 +1,12 @@
 const assert = require('assert');
-const { openBrowser,closeBrowser, goto, checkBox, click, near,into,$,inputField,hover,button,
+const { openBrowser,closeBrowser, goto, checkBox, click, near,into,$,textBox,hover,button,
     write, text, press } = require('taiko');
 
 describe('test todo mvc activities', () => {
 
     before(async () => {
         await openBrowser({headless:false});
-        await goto('http://todomvc.com/examples/react/#/'); 
+        await goto('http://todomvc.com/examples/angularjs/#/'); 
     });
 
     after(async () => {
@@ -14,7 +14,7 @@ describe('test todo mvc activities', () => {
     });
 
     it('should add task', async () => {
-        await write('Add Task');
+        await write('Add Task',into(textBox({placeholder:"What needs to be done?"})));
         await press('Enter')
         assert.ok(await text('1 item left').exists());
 
@@ -23,7 +23,7 @@ describe('test todo mvc activities', () => {
     });
 
     it('should mark task as complete', async () => {
-        await write('Complete Task',into(inputField({placeholder:"What needs to be done?"})));
+        await write('Complete Task',into(textBox({placeholder:"What needs to be done?"})));
         await press('Enter')
         assert.ok(await text('1 item left').exists());
         await click('Active')
@@ -37,7 +37,7 @@ describe('test todo mvc activities', () => {
     });
 
     it('should list active tasks', async () => {
-        await write('Completed Task',into(inputField({placeholder:"What needs to be done?"})));
+        await write('Completed Task',into(textBox({placeholder:"What needs to be done?"})));
         await press('Enter')
         assert.ok(await text('1 item left').exists());
         await click('Active')
@@ -51,7 +51,7 @@ describe('test todo mvc activities', () => {
     });
 
     it('should list completed tasks', async () => {
-        await write('Complete Task',into(inputField({placeholder:"What needs to be done?"})));
+        await write('Complete Task',into(textBox({placeholder:"What needs to be done?"})));
         await press('Enter')
         assert.ok(await text('1 item left').exists());
         await click('Active')
@@ -65,7 +65,7 @@ describe('test todo mvc activities', () => {
     });
 
     it('should clear completed tasks', async () => {
-        await write('Clear Task',into(inputField({placeholder:"What needs to be done?"})));
+        await write('Clear Task',into(textBox({placeholder:"What needs to be done?"})));
         await press('Enter')
         assert.ok(await text('1 item left').exists());
         await click(checkBox(near('Clear Task')))
@@ -76,7 +76,7 @@ describe('test todo mvc activities', () => {
     });
 
     it('should remove task', async () => {
-        await write('Remove Task',into(inputField({placeholder:"What needs to be done?"})));
+        await write('Remove Task',into(textBox({placeholder:"What needs to be done?"})));
         await press('Enter')
         assert.ok(await text('1 item left').exists());
         await hover("Remove Task");

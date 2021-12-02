@@ -9,7 +9,7 @@ describe('test todo mvc activities', () => {
         await page.setViewport({width:1440,height:900});
         const [response] = await Promise.all([
             page.waitForNavigation(), // The promise resolves after navigation has finished
-            page.goto('http://todomvc.com/examples/react/#/'),
+            page.goto('http://todomvc.com/examples/angularjs/#/'),
           ]);
     });
 
