@@ -1,4 +1,4 @@
-# compareBrowserAutomationTools
+# Browser Automation Tool Report
 
 In this repo we have test cases of the same workflow built with different automation testing tools(Selenium, Cypress, Puppeteer, WebdriverIO, TestCafe and Taiko). 
 The intention is to compare the tools for Reliability, maintainability and performance.
