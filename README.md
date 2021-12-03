@@ -19,4 +19,6 @@ This is the time taken by the individual tools to run the test scenarios in sequ
 Note:- Parallel run with Test Framework Integration - Tools that can take advantage of runner(example Gauge) features like parallel runs to give faster 
 Here are the findings
 
+More details about executing the tests can be found at [compareCostOfSelectorMaintenance](https://github.com/getgauge-contrib/compareBrowserAutomationTools/blob/master/compareCostOfSelectorMaintenance/README.md) and [comparePerformanceAndReliableWaitsOfTools](https://github.com/getgauge-contrib/compareBrowserAutomationTools/blob/master/comparePerformanceAndReliableWaitsOfTools/README.md)
+
 ![Comparison Summary](https://gauge.org/assets/images/blog/taiko_comparison_infographic_blog_post.jpg)
